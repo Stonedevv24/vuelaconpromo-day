@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envios y Paquetería Express</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #ffcc00);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+            margin: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .container {
+            width: 100%;
+            padding: 40px 10%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #ffcc00;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 25px;
+            transition: 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .cta-btn:hover {
+            background: #ff6b6b;
+            color: #fff;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Grid para las secciones */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Servicios de Envíos y Paquetería Express</h1>
+        <p>Tu solución rápida y segura para envíos nacionales e internacionales.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Introducción -->
+        <section class="section">
+            <h2>¿Por qué elegirnos?</h2>
+            <p>Ofrecemos un servicio de paquetería eficiente, confiable y rápido, con cobertura en todo el mundo. Ya sea que necesites realizar un envío nacional o internacional, nuestros tiempos de entrega son inigualables.</p>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="section">
+            <h2>Beneficios de Nuestros Servicios</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Rápidez</h3>
+                    <p>Entrega en tiempos récord gracias a nuestros procesos optimizados.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Seguridad</h3>
+                    <p>Todos los paquetes son monitoreados constantemente hasta su entrega.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Precios Competitivos</h3>
+                    <p>Tarifas justas para que puedas ahorrar sin sacrificar calidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="section">
+            <h2>Servicios Disponibles</h2>
+            <p>Ofrecemos una amplia variedad de opciones para cubrir todas tus necesidades de paquetería. Desde envíos urgentes hasta entregas estándar, podemos adaptarnos a tu presupuesto y tiempo disponible.</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Envíos Urgentes</h3>
+                    <p>Garantizamos la entrega de tus paquetes en el menor tiempo posible.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Envíos Internacionales</h3>
+                    <p>Llega a cualquier rincón del mundo con seguridad y rapidez.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Paquetería Nacional</h3>
+                    <p>Conectamos todos los rincones de tu país en tiempo récord.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamada a la acción -->
+        <section class="section">
+            <h2>¡Haz tu Envío Ahora!</h2>
+            <p>No importa si es nacional o internacional, tenemos el servicio ideal para ti.</p>
+            <a href="#" class="cta-btn">Haz tu Envío</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p style="text-align:center; padding: 20px 0; background-color: #333; color: white;">© 2025 Envíos y Paquetería Express</p>
+    </footer>
+
+</body>
+
+</html>
